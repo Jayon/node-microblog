@@ -3,7 +3,7 @@ var User = require('../models/user');
 var Post = require('../models/post');
 
 module.exports = function (app) {
-    app.get('/', function (req, res) {
+    app.get('/', function (req, res) { 
         Post.get(null, function (err, posts) {
             if (err) {
                 posts = [];
